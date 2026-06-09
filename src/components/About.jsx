@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImg from '../assets/profile.jpeg';
 import { FaGraduationCap, FaCode, FaSearch } from 'react-icons/fa';
 
 export default function About() {
@@ -29,24 +28,11 @@ export default function About() {
     <section id="about" className="about-section">
       <h2 className="section-title">About Me</h2>
       
-      <div className="about-grid">
-        <motion.div 
-          className="about-image-container"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="about-img-frame">
-            <img src={profileImg} alt="Nipun Induwara Profile" className="about-img" id="about-profile-pic" />
-            <div className="img-glow"></div>
-          </div>
-        </motion.div>
-
+      <div className="about-content-wrapper">
         <motion.div 
           className="about-info"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
         >

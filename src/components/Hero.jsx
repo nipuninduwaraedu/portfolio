@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import profileImg from '../assets/profile.jpeg';
 
 export default function Hero() {
   const canvasRef = useRef(null);
@@ -121,80 +122,94 @@ export default function Hero() {
       <div className="ambient-glow glow-cyan"></div>
       <div className="ambient-glow glow-purple" style={{ bottom: '10%', right: '10%' }}></div>
 
-      <div className="hero-content">
-        <motion.p 
-          className="hero-subtitle"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Welcome to my portfolio
-        </motion.p>
-        
-        <motion.h1 
-          className="hero-title"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          Hi, I'm <span className="gradient-text">Nipun Induwara</span>
-        </motion.h1>
+      <div className="hero-grid">
+        <div className="hero-text">
+          <motion.p 
+            className="hero-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Welcome to my portfolio
+          </motion.p>
+          
+          <motion.h1 
+            className="hero-title"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Hi, I'm <span className="gradient-text">Nipun Induwara</span>
+          </motion.h1>
+
+          <motion.div 
+            className="hero-typed-container"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <span className="static-text">I'm a </span>
+            <TypeAnimation
+              sequence={[
+                'MERN Stack Developer',
+                2000,
+                'React.js Enthusiast',
+                2000,
+                'Python Developer',
+                2000,
+                'IT Undergraduate at SLIIT',
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              className="typed-text"
+              repeat={Infinity}
+            />
+          </motion.div>
+
+          <motion.p 
+            className="hero-desc"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            Crafting modern, responsive, and robust web applications with the MERN Stack. 
+            Passionate about clean code, performance, and outstanding user experiences.
+          </motion.p>
+
+          <motion.div 
+            className="hero-ctas"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            <button 
+              onClick={() => scrollToSection('projects')} 
+              className="btn btn-primary"
+              id="hero-cta-work"
+            >
+              View My Work
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="btn btn-secondary"
+              id="hero-cta-hire"
+            >
+              Hire Me
+            </button>
+          </motion.div>
+        </div>
 
         <motion.div 
-          className="hero-typed-container"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          className="hero-image-container"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <span className="static-text">I'm a </span>
-          <TypeAnimation
-            sequence={[
-              'MERN Stack Developer',
-              2000,
-              'React.js Enthusiast',
-              2000,
-              'Python Developer',
-              2000,
-              'IT Undergraduate at SLIIT',
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            className="typed-text"
-            repeat={Infinity}
-          />
-        </motion.div>
-
-        <motion.p 
-          className="hero-desc"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          Crafting modern, responsive, and robust web applications with the MERN Stack. 
-          Passionate about clean code, performance, and outstanding user experiences.
-        </motion.p>
-
-        <motion.div 
-          className="hero-ctas"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          <button 
-            onClick={() => scrollToSection('projects')} 
-            className="btn btn-primary"
-            id="hero-cta-work"
-          >
-            View My Work
-          </button>
-          <button 
-            onClick={() => scrollToSection('contact')} 
-            className="btn btn-secondary"
-            id="hero-cta-hire"
-          >
-            Hire Me
-          </button>
+          <div className="hero-img-frame">
+            <img src={profileImg} alt="Nipun Induwara Profile" className="hero-img" id="hero-profile-pic" />
+            <div className="hero-img-glow"></div>
+          </div>
         </motion.div>
       </div>
 
