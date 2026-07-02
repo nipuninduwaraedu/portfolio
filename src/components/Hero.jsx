@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
-import profileImg from '../assets/profile.jpeg';
+import React, { useEffect, useRef } from "react";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import profileImg from "../assets/profile.jpeg";
 
 export default function Hero() {
   const canvasRef = useRef(null);
@@ -10,7 +10,7 @@ export default function Hero() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     let animationFrameId;
@@ -21,7 +21,7 @@ export default function Hero() {
       canvas.height = canvas.parentElement.offsetHeight;
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
     class Particle {
@@ -31,7 +31,10 @@ export default function Hero() {
         this.size = Math.random() * 2 + 0.5;
         this.speedX = Math.random() * 0.5 - 0.25;
         this.speedY = Math.random() * 0.5 - 0.25;
-        this.color = Math.random() > 0.5 ? 'rgba(0, 243, 255, 0.4)' : 'rgba(157, 78, 221, 0.4)';
+        this.color =
+          Math.random() > 0.5
+            ? "rgba(16, 185, 129, 0.4)"
+            : "rgba(20, 184, 166, 0.4)";
       }
 
       update() {
@@ -55,7 +58,9 @@ export default function Hero() {
 
     const init = () => {
       particles = [];
-      const numberOfParticles = Math.floor((canvas.width * canvas.height) / 15000);
+      const numberOfParticles = Math.floor(
+        (canvas.width * canvas.height) / 15000,
+      );
       for (let i = 0; i < numberOfParticles; i++) {
         particles.push(new Particle());
       }
@@ -65,7 +70,7 @@ export default function Hero() {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       for (let a = 0; a < particles.length; a++) {
         for (let b = a; b < particles.length; b++) {
           const dx = particles[a].x - particles[b].x;
@@ -73,7 +78,7 @@ export default function Hero() {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 100) {
-            ctx.strokeStyle = `rgba(0, 243, 255, ${0.15 - distance / 1000})`;
+            ctx.strokeStyle = `rgba(16, 185, 129, ${0.15 - distance / 1000})`;
             ctx.lineWidth = 0.5;
             ctx.beginPath();
             ctx.moveTo(particles[a].x, particles[a].y);
@@ -95,7 +100,7 @@ export default function Hero() {
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -110,21 +115,28 @@ export default function Hero() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
 
   return (
     <section id="home" className="hero-section">
-      <canvas ref={canvasRef} className="hero-canvas" id="hero-particles"></canvas>
-      
-      <div className="ambient-glow glow-cyan"></div>
-      <div className="ambient-glow glow-purple" style={{ bottom: '10%', right: '10%' }}></div>
+      <canvas
+        ref={canvasRef}
+        className="hero-canvas"
+        id="hero-particles"
+      ></canvas>
+
+      <div className="ambient-glow glow-green"></div>
+      <div
+        className="ambient-glow glow-teal"
+        style={{ bottom: "10%", right: "10%" }}
+      ></div>
 
       <div className="hero-grid">
         <div className="hero-text">
-          <motion.p 
+          <motion.p
             className="hero-subtitle"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -132,8 +144,8 @@ export default function Hero() {
           >
             Welcome to my portfolio
           </motion.p>
-          
-          <motion.h1 
+
+          <motion.h1
             className="hero-title"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -142,7 +154,7 @@ export default function Hero() {
             Hi, I'm <span className="gradient-text">Nipun Induwara</span>
           </motion.h1>
 
-          <motion.div 
+          <motion.div
             className="hero-typed-container"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -151,13 +163,13 @@ export default function Hero() {
             <span className="static-text">I'm a </span>
             <TypeAnimation
               sequence={[
-                'MERN Stack Developer',
+                "MERN Stack Developer",
                 2000,
-                'React.js Enthusiast',
+                "React.js Enthusiast",
                 2000,
-                'Python Developer',
+                "Python Developer",
                 2000,
-                'IT Undergraduate at SLIIT',
+                "IT Undergraduate at SLIIT",
                 2000,
               ]}
               wrapper="span"
@@ -167,31 +179,32 @@ export default function Hero() {
             />
           </motion.div>
 
-          <motion.p 
+          <motion.p
             className="hero-desc"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Crafting modern, responsive, and robust web applications with the MERN Stack. 
-            Passionate about clean code, performance, and outstanding user experiences.
+            Crafting modern, responsive, and robust web applications with the
+            MERN Stack. Passionate about clean code, performance, and
+            outstanding user experiences.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="hero-ctas"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <button 
-              onClick={() => scrollToSection('projects')} 
+            <button
+              onClick={() => scrollToSection("projects")}
               className="btn btn-primary"
               id="hero-cta-work"
             >
               View My Work
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')} 
+            <button
+              onClick={() => scrollToSection("contact")}
               className="btn btn-secondary"
               id="hero-cta-hire"
             >
@@ -200,20 +213,28 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <motion.div 
+        <motion.div
           className="hero-image-container"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <div className="hero-img-frame">
-            <img src={profileImg} alt="Nipun Induwara Profile" className="hero-img" id="hero-profile-pic" />
+            <img
+              src={profileImg}
+              alt="Nipun Induwara Profile"
+              className="hero-img"
+              id="hero-profile-pic"
+            />
             <div className="hero-img-glow"></div>
           </div>
         </motion.div>
       </div>
 
-      <div className="hero-scroll-indicator" onClick={() => scrollToSection('about')}>
+      <div
+        className="hero-scroll-indicator"
+        onClick={() => scrollToSection("about")}
+      >
         <div className="mouse">
           <div className="wheel"></div>
         </div>
