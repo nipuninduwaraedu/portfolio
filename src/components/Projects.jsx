@@ -5,47 +5,57 @@ import { FaGithub, FaExternalLinkAlt, FaFolder } from 'react-icons/fa';
 export default function Projects() {
   const projectsList = [
     {
-      title: 'University Resource Booking System',
-      category: 'Full-Stack (MERN)',
-      description: 'A role-based booking system for university facilities, labs, and equipment. Features user authentication, interactive availability calendars, and comprehensive admin dashboards to manage resources.',
-      tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT', 'TailwindCSS'],
+      title: 'Gym Management System',
+      category: 'Full-Stack MERN Application',
+      description:
+        'A full-stack Gym Management System developed using the MERN stack. Features JWT authentication with role-based access control for administrators and users, along with membership management, trainer bookings, and member record management through RESTful APIs.',
+      tags: [
+        'MongoDB',
+        'Express.js',
+        'React.js',
+        'Node.js',
+        'JWT',
+        'REST API',
+      ],
       github: 'https://github.com/nipuninduwaraedu',
       demo: '#',
     },
-    {
-      title: 'Student Management System',
-      category: 'Team Project | MERN',
-      description: 'An educational management platform. My primary contribution was developing and integrating an intelligent AI chatbot module to assist students with schedule queries and resource location.',
-      tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'AI Integration', 'WebSockets'],
-      github: 'https://github.com/nipuninduwaraedu',
-      demo: '#',
-    },
+
     {
       title: 'Movie Explorer Application',
-      category: 'Frontend Development',
-      description: 'A responsive movie searching application. Leverages a public movie REST API to retrieve real-time search queries, display detailed movie specifications, reviews, ratings, and trailers.',
-      tags: ['React.js', 'CSS Modules', 'REST API', 'Framer Motion'],
+      category: 'React.js | Web, Desktop & PWA',
+      description:
+        'A movie exploration application built from a single React.js codebase and deployed as a Web, Desktop (Electron), and Progressive Web App (PWA). Integrated the TMDB API to provide movie search, detailed information, and watchlist functionality with a responsive user interface.',
+      tags: [
+        'React.js',
+        'Electron.js',
+        'PWA',
+        'TMDB API',
+        'REST API',
+        'Responsive UI',
+      ],
       github: 'https://github.com/nipuninduwaraedu',
       demo: '#',
     },
+
     {
-      title: 'Bank Management System',
-      category: 'Python Application',
-      description: 'A terminal-based banking application designed to handle account creations, deposits, withdrawals, transfers, and balance inquiries. Features file handling for user account persistence.',
-      tags: ['Python', 'File Handling', 'OOP', 'CLI'],
+      title: 'Banking Management System',
+      category: 'Python Console Application',
+      description:
+        'A console-based Banking Management System developed using Python. Supports account creation, deposits, withdrawals, balance inquiries, and transaction management while applying object-oriented programming principles, modular code organization, and file handling for persistent data storage.',
+      tags: [
+        'Python',
+        'OOP',
+        'File Handling',
+        'CLI',
+        'Data Persistence',
+      ],
       github: 'https://github.com/nipuninduwaraedu',
       demo: '#',
     },
-    {
-      title: 'Calculator Application',
-      category: 'Web Basics',
-      description: 'A sleek, glassmorphic calculator application supporting standard arithmetic operations. Fully responsive, featuring dark/light mode toggle with smooth animations.',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'Glassmorphism'],
-      github: 'https://github.com/nipuninduwaraedu',
-      demo: '#',
-    }
   ];
 
+}
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
