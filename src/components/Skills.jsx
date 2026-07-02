@@ -7,16 +7,16 @@ import { SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
 
 export default function Skills() {
   const skillsList = [
-    { name: 'React.js', icon: <FaReact />, color: '#00f3ff', level: 'Advanced' },
-    { name: 'Node.js', icon: <FaNodeJs />, color: '#68a063', level: 'Intermediate' },
-    { name: 'Express.js', icon: <SiExpress />, color: '#ffffff', level: 'Intermediate' },
-    { name: 'MongoDB', icon: <SiMongodb />, color: '#4db33d', level: 'Intermediate' },
-    { name: 'JavaScript', icon: <FaJs />, color: '#f7df1e', level: 'Advanced' },
+    { name: 'React.js', icon: <FaReact />, color: '#00f3ff', level: 'Beginner' },
+    { name: 'Node.js', icon: <FaNodeJs />, color: '#68a063', level: 'Beginner' },
+    { name: 'Express.js', icon: <SiExpress />, color: '#ffffff', level: 'Beginner' },
+    { name: 'MongoDB', icon: <SiMongodb />, color: '#4db33d', level: 'Beginner' },
+    { name: 'JavaScript', icon: <FaJs />, color: '#f7df1e', level: 'Beginner' },
     { name: 'Python', icon: <FaPython />, color: '#3776ab', level: 'Intermediate' },
-    { name: 'HTML5', icon: <FaHtml5 />, color: '#e34f26', level: 'Advanced' },
-    { name: 'CSS3', icon: <FaCss3Alt />, color: '#1572b6', level: 'Advanced' },
+    { name: 'HTML5', icon: <FaHtml5 />, color: '#e34f26', level: 'Intermediate' },
+    { name: 'CSS3', icon: <FaCss3Alt />, color: '#1572b6', level: 'Intermediate' },
     { name: 'Git', icon: <FaGitAlt />, color: '#f05032', level: 'Intermediate' },
-    { name: 'GitHub REST APIs', icon: <FaGithub />, color: '#8c44fc', level: 'Intermediate' },
+    { name: 'GitHub', icon: <FaGithub />, color: '#8c44fc', level: 'Intermediate' },
     { name: 'Postman', icon: <SiPostman />, color: '#ff6c37', level: 'Intermediate' }
   ];
 
