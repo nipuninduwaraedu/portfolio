@@ -81,7 +81,7 @@ export default function Contact() {
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      value: 'Colombo, Sri Lanka',
+      value: 'Eppawala, Sri Lanka',
       link: '#'
     }
   ];
