@@ -62,7 +62,7 @@ export default function Navbar() {
     <nav className={`navbar-container ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-content">
         <div className="navbar-logo" onClick={() => handleNavClick('home')} id="nav-logo">
-          Nipun<span>.</span>
+          Nipun Induwara<span>.</span>
         </div>
 
         {/* Desktop Menu */}
