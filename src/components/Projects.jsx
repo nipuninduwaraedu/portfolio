@@ -8,7 +8,7 @@ export default function Projects() {
       title: "Gym Management System",
       category: "Full-Stack MERN Application",
       description:
-        "A full-stack Gym Management System developed using the MERN stack. Features JWT authentication with role-based access control for administrators and users, along with membership management, trainer bookings, and member record management through RESTful APIs.",
+        "A full-stack Gym Management System developed using the MERN stack. Features JWT authentication with role-based access control for administrators and users, along with membership management, bookings management through RESTful APIs.",
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "REST API"],
       github: "https://github.com/nipuninduwaraedu",
       demo: "#",
@@ -18,7 +18,7 @@ export default function Projects() {
       title: "Movie Explorer Application",
       category: "React.js | Web, Desktop & PWA",
       description:
-        "A movie exploration application built from a single React.js codebase and deployed as a Web, Desktop (Electron), and Progressive Web App (PWA). Integrated the TMDB API to provide movie search, detailed information, and watchlist functionality with a responsive user interface.",
+        "A movie exploration application built from a single React.js codebase and deployed as a Web, Desktop (Electron), and Progressive Web App (PWA). Integrated the TMDB API to provide movie search and watchlist functionality with a responsive user interface.",
       tags: [
         "React.js",
         "Electron.js",
@@ -35,7 +35,7 @@ export default function Projects() {
       title: "Banking Management System",
       category: "Python Console Application",
       description:
-        "A console-based Banking Management System developed using Python. Supports account creation, deposits, withdrawals, balance inquiries, and transaction management while applying object-oriented programming principles, modular code organization, and file handling for persistent data storage.",
+        "A console-based Banking Management System developed using Python. Supports account creation, deposits, withdrawals, balance inquiries while applying object-oriented programming principles, modular code organization, and file handling for persistent data storage.",
       tags: ["Python", "OOP", "File Handling", "CLI", "Data Persistence"],
       github: "https://github.com/nipuninduwaraedu",
       demo: "#",

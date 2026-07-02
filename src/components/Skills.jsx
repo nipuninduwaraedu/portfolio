@@ -15,9 +15,9 @@ export default function Skills() {
     { name: 'Python', icon: <FaPython />, color: '#3776ab', level: 'Intermediate' },
     { name: 'HTML5', icon: <FaHtml5 />, color: '#e34f26', level: 'Intermediate' },
     { name: 'CSS3', icon: <FaCss3Alt />, color: '#1572b6', level: 'Intermediate' },
-    { name: 'Git', icon: <FaGitAlt />, color: '#f05032', level: 'Intermediate' },
+    { name: 'Git', icon: <FaGitAlt />, color: '#f05032', level: 'Beginner' },
     { name: 'GitHub', icon: <FaGithub />, color: '#8c44fc', level: 'Intermediate' },
-    { name: 'Postman', icon: <SiPostman />, color: '#ff6c37', level: 'Intermediate' }
+    { name: 'Postman', icon: <SiPostman />, color: '#ff6c37', level: 'Beginner' }
   ];
 
   const containerVariants = {
