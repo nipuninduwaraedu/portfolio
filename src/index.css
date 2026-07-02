@@ -201,8 +201,9 @@ section {
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 15%;
-  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
   height: 4px;
   background: linear-gradient(90deg, var(--accent-green), var(--accent-teal));
   border-radius: 2px;
@@ -1038,8 +1039,13 @@ section {
   section {
     padding: 80px 16px;
   }
+
   .hero-grid {
     padding: 0 24px;
+  }
+
+  .section-title::after {
+    width: 150px;
   }
 }
 
@@ -1049,31 +1055,38 @@ section {
     gap: 40px;
     padding: 0 24px;
   }
+
   .hero-text {
     text-align: center;
     order: 2;
   }
+
   .hero-image-container {
     order: 1;
     margin-bottom: 20px;
   }
+
   .hero-img-frame {
     width: 260px;
     height: 260px;
   }
+
   .hero-desc {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
   }
+
   .hero-ctas {
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .section-title {
     font-size: 2.2rem;
   }
@@ -1083,28 +1096,39 @@ section {
   .hero-grid {
     padding: 0 20px;
   }
+
   .hero-title {
     font-size: 2.3rem;
   }
+
   .hero-typed-container {
     font-size: 1.25rem;
     height: auto;
   }
+
   .hero-img-frame {
     width: 220px;
     height: 220px;
   }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
   .navbar-logo {
     font-size: 1.4rem;
   }
+
   .contact-form {
     padding: 24px;
+  }
+
+  .section-title::after {
+    width: 120px;
   }
 }
 
@@ -1112,33 +1136,46 @@ section {
   .section-title {
     font-size: 1.9rem;
   }
+
+  .section-title::after {
+    width: 100px;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
+
   .hero-subtitle {
     font-size: 0.95rem;
     letter-spacing: 3px;
   }
+
   .hero-typed-container {
     font-size: 1.15rem;
   }
+
   .hero-desc {
     font-size: 1rem;
   }
+
   .hero-ctas {
     gap: 12px;
   }
+
   .btn {
     padding: 10px 24px;
     font-size: 0.95rem;
   }
+
   .hero-img-frame {
     width: 200px;
     height: 200px;
   }
+
   .about-cards {
     grid-template-columns: 1fr;
   }
+
   .contact-detail-card {
     padding: 16px;
   }
@@ -1148,35 +1185,48 @@ section {
   section {
     padding: 60px 12px;
   }
+
   .hero-section {
     padding-top: 100px;
   }
+
   .hero-grid {
     padding: 0 16px;
     gap: 30px;
   }
+
   .hero-title {
     font-size: 1.8rem;
   }
+
   .hero-typed-container {
     font-size: 1.05rem;
   }
+
   .hero-desc {
     font-size: 0.95rem;
   }
+
   .btn {
     width: 100%;
     padding: 12px 20px;
     font-size: 0.95rem;
     justify-content: center;
   }
+
   .hero-img-frame {
     width: 180px;
     height: 180px;
   }
+
   .section-title {
     font-size: 1.6rem;
   }
+
+  .section-title::after {
+    width: 90px;
+  }
+
   .contact-form {
     padding: 20px;
   }
