@@ -94,8 +94,10 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact-section">
-      <h2 className="section-title">Get In Touch</h2>
-
+      <div className="section-title-wrapper">
+        <h2 className="section-title">Get In Touch</h2>
+      </div>
+      
       <div className="contact-intro">
         <p>Feel free to reach out to me! Whether you have a question, want to collaborate on a project, or discuss internship opportunities.</p>
       </div>

@@ -44,7 +44,9 @@ export default function Skills() {
 
   return (
     <section id="skills" className="skills-section">
-      <h2 className="section-title">My Skills</h2>
+      <div className="section-title-wrapper">
+        <h2 className="section-title">My Skills</h2>
+      </div>
       
       <div className="skills-intro">
         <p>Here are the technologies and tools I specialize in to build state-of-the-art web applications.</p>

@@ -26,7 +26,9 @@ export default function About() {
 
   return (
     <section id="about" className="about-section">
-      <h2 className="section-title">About Me</h2>
+      <div className="section-title-wrapper">
+        <h2 className="section-title">About Me</h2>
+      </div>
       
       <div className="about-content-wrapper">
         <motion.div 

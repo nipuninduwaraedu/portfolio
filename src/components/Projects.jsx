@@ -61,7 +61,9 @@ export default function Projects() {
 
   return (
     <section id="projects" className="projects-section">
-      <h2 className="section-title">My Projects</h2>
+      <div className="section-title-wrapper">
+        <h2 className="section-title">My Projects</h2>
+      </div>
 
       <div className="projects-intro">
         <p>

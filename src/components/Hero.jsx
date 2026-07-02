@@ -230,16 +230,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-
-      <div
-        className="hero-scroll-indicator"
-        onClick={() => scrollToSection("about")}
-      >
-        <div className="mouse">
-          <div className="wheel"></div>
-        </div>
-        <span>Scroll Down</span>
-      </div>
     </section>
   );
 }
